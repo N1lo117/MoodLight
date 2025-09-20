@@ -19,7 +19,7 @@
       clientId: "webclient-" + Math.random().toString(16).substr(2, 8)
     };
 
-    const client = mqtt.connect("wss://e6872d409e4d4e09a08d5a244e1b038d.s1.eu.hivemq.cloud:8883", options);
+    const client = mqtt.connect("wss://e6872d409e4d4e09a08d5a244e1b038d.s1.eu.hivemq.cloud:8884/mqtt", options);
 
     client.on("connect", () => {
       document.getElementById("status").innerText = "✅ Connected!";
